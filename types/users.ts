@@ -13,3 +13,8 @@ export interface IUser {
   last_name: string,
   avatar:string,
 }
+
+export interface IUserPost {
+  email: string,
+  password: string,
+}
