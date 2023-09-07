@@ -25,7 +25,6 @@ const AddUser = () => {
       setPasswordValue("");
       setModalOpen(false);
       router.refresh();
-      setFormError(true);
     } else {
       setFormError(true);
     }
