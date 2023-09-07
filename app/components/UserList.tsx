@@ -13,15 +13,16 @@ const TodoList: React.FC<TodoListProps> = ({ users }) => {
         {/* head */}
         <thead>
           <tr>
+            <td></td>
+            <th>Image</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
-            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          {users.data.map((user) => (
-            <User key={user.id} user={user} />
+          {users.data.map((user, index) => (
+            <User key={user.id} user={user} index={index}/>
           ))}
         </tbody>
       </table>
